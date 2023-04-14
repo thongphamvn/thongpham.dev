@@ -27,7 +27,7 @@ export default function NavBar() {
     return null
   }
   return (
-    <main className='w-full fixed top-0 h-12'>
+    <main className='w-full fixed bg-lightOpacity dark:bg-darkOpacity top-0 h-12 z-1'>
       <div className='flex max-w-xl justify-between mx-auto py-2 items-center'>
         <div className='flex items-center gap-12'>
           <Link href='/'>
