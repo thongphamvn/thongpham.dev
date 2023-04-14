@@ -58,7 +58,7 @@ export default function NavBar() {
               </button>
             ) : (
               <button
-                className='p-2 rounded border border-light'
+                className='p-2 rounded-lg border border-light'
                 onClick={() => setTheme('light')}
               >
                 <MdOutlineLightMode className='text-xl' />
