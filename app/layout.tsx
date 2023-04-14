@@ -16,9 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang='en'>
-      <body
-        className={'bg-[#f0e7db] dark:bg-[#20202380] w-full ' + font.className}
-      >
+      <body className={'bg-light dark:bg-dark w-full ' + font.className}>
         <Providers>
           <NavBar />
           <main className='pt-12 max-w-xl m-auto'>{children}</main>

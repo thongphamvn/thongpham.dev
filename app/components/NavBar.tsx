@@ -2,6 +2,7 @@
 
 import { useTheme } from 'next-themes'
 import Link from 'next/link'
+import { useEffect, useState } from 'react'
 import { MdOutlineDarkMode, MdOutlineLightMode } from 'react-icons/md'
 import Logo from './Logo'
 
@@ -18,7 +19,13 @@ import Logo from './Logo'
 
 export default function NavBar() {
   const { theme, setTheme } = useTheme()
+  const [mounted, setMounted] = useState(false)
 
+  useEffect(() => setMounted(true), [])
+
+  if (!mounted) {
+    return null
+  }
   return (
     <main className='w-full fixed top-0 h-12'>
       <div className='flex max-w-xl justify-between mx-auto py-2 items-center'>
@@ -44,14 +51,14 @@ export default function NavBar() {
           <div className='self-end mr-4'>
             {theme === 'light' ? (
               <button
-                className='p-2 rounded-lg border border-[#20202380]'
+                className='p-2 rounded-lg border border-dark'
                 onClick={() => setTheme('dark')}
               >
                 <MdOutlineDarkMode className='text-xl' />
               </button>
             ) : (
               <button
-                className='p-2 rounded border border-[#f0e7db]'
+                className='p-2 rounded border border-light'
                 onClick={() => setTheme('light')}
               >
                 <MdOutlineLightMode className='text-xl' />
