@@ -7,7 +7,7 @@ export default function Home() {
       <div>
         <div>
           <div className='flex mt-8 items-start flex-col-reverse sm:flex-row sm:items-center'>
-            <p className=''>{`Thong Pham is a highly skilled full-stack web developer in Vietnam with over 5 years of experience. He enjoys solving real-world problems and exploring new technologies, while also sharing his knowledge and expertise to help aspiring developers succeed.`}</p>
+            <p className='text-justify'>{`Thong Pham is a highly skilled full-stack web developer in Vietnam with over 5 years of experience. He enjoys solving real-world problems and exploring new technologies, while also sharing his knowledge and expertise to help aspiring developers succeed.`}</p>
             <Image
               className='flex-shrink-0 self-center pb-4'
               src={'/thongpham.png'}
