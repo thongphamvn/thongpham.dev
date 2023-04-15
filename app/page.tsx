@@ -23,26 +23,26 @@ export default function Home() {
           </div>
         </div>
         <div className='flex flex-col items-center sm:items-start'>
-          <h3 className='mt-8 text-lg font-bold mb-2 border-b-[1px] border-dark dark:border-light'>
+          <h3 className='mt-12 text-lg font-bold mb-2 border-b-[1px] border-dark dark:border-light'>
             Employments
           </h3>
           <Contributions />
         </div>
         <div className='flex flex-col items-center sm:items-start'>
-          <h3 className='mt-8 text-lg font-bold mb-2 border-b-[1px] border-dark dark:border-light'>
+          <h3 className='mt-12 text-lg font-bold mb-2 border-b-[1px] border-dark dark:border-light'>
             Side Projects
           </h3>
           <div className='w-full grid grid-cols-2 gap-2'>
-            <div className='h-24 col-span-1 border border-dark dark:border-light rounded-lg flex justify-center items-center'>
+            <div className='h-24 col-span-1 shadow-md rounded-lg flex justify-center items-center'>
               Coming soon!
             </div>
-            <div className='h-24 col-span-1 border border-dark dark:border-light rounded-lg flex justify-center items-center'>
+            <div className='h-24 col-span-1 shadow-md rounded-lg flex justify-center items-center'>
               Coming soon!
             </div>
           </div>
         </div>
         <div className='flex flex-col items-center sm:items-start'>
-          <h3 className='mt-8 text-lg font-bold mb-2 border-b-[1px] border-dark dark:border-light'>
+          <h3 className='mt-12 text-lg font-bold mb-2 border-b-[1px] border-dark dark:border-light'>
             Contacts
           </h3>
           <div className=''>Soon!</div>
