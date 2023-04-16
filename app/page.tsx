@@ -19,7 +19,7 @@ export default function Home() {
             />
             <p className='text-justify'>
               <span className='font-semibold'>Thong Pham</span>
-              {` is a highly skilled full-stack web developer based in Vietnam, with expertise in various technologies. With over 6 years of experience in the industry, Thong has collaborated with both established companies and startups and has excelled in fast-paced startup environments, where his strong problem-solving skills have been put to good use. He is always exploring new technologies and utilizing his technical expertise to create impactful software solutions.
+              {` is a highly skilled full-stack web developer based in Vietnam, with expertise in various technologies. With over 7 years of experience in the industry, Thong has collaborated with both established companies and startups and has excelled in fast-paced startup environments, where his strong problem-solving skills have been put to good use. He is always exploring new technologies and utilizing his technical expertise to create impactful software solutions.
             `}
             </p>
           </div>
