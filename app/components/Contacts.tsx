@@ -8,7 +8,7 @@ export default function Contacts() {
         className='flex gap-1'
         target='_blank'
       >
-        <div className='bg-white rounded-full'>
+        <div className='bg-cyan-600 rounded-full'>
           <Image src='github.svg' width={24} height={24} alt='Github Logo' />
         </div>
         <span>@thongphamvn</span>
@@ -18,7 +18,7 @@ export default function Contacts() {
         target='_blank'
         className='flex gap-1'
       >
-        <div className='bg-[#0288D1] rounded-full'>
+        <div className='bg-cyan-600 rounded-full'>
           <Image
             src='linkedin.svg'
             width={24}
