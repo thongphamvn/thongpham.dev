@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Contributions from './components/Contributions'
 import SectionContainer from './components/SectionContainer'
 import SideProject from './components/SideProject'
 import WorkHistory from './components/WorkHistory'
@@ -25,19 +24,10 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className='flex flex-col items-center sm:items-start'>
-          <h3 className='mt-12 text-lg font-bold mb-2 border-b-[1px] border-dark dark:border-light'>
-            Work History
-          </h3>
-          <Contributions />
-          <WorkHistory />
-        </div>
+        <WorkHistory />
         <SectionContainer label='Side Projects'>
           <SideProject />
         </SectionContainer>
-        {/* <SectionContainer label='Find me'>
-          <Contacts />
-        </SectionContainer> */}
       </div>
     </main>
   )
