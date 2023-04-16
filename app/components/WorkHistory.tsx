@@ -60,10 +60,10 @@ export default function WorkHistory() {
         </div>
       </button>
       <Collapse in={isOpen} animateOpacity>
-        <ol className='relative mt-4 border-l border-gray-400 dark:border-gray-700 ml-1'>
+        <ol className='relative mt-4 border-l border-cyan-600 ml-2'>
           {works.map((work, i) => (
             <li key={i} className='ml-4'>
-              <div className='absolute w-3 h-3 bg-gray-400 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700'></div>
+              <div className='absolute w-3 h-3 bg-cyan-600 rounded-full mt-1.5 -left-1.5 border border-cyan-600'></div>
               <time className='mb-1 text-sm font-normal leading-none text-gray-500 dark:text-gray-400'>
                 {work.time}
               </time>
