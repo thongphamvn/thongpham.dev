@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Contacts from './components/Contacts'
 import SectionContainer from './components/SectionContainer'
 import SideProject from './components/SideProject'
 import WorkHistory from './components/WorkHistory'
@@ -17,7 +18,7 @@ export default function Home() {
               style={{ height: 'auto' }}
               height={100}
             />
-            <p className='text-justify'>
+            <p className='text-justify indent-4'>
               <span className='font-semibold'>Thong Pham</span>
               {` is a highly skilled full-stack web developer based in Vietnam, with expertise in various technologies. With over 7 years of experience in the industry, Thong has collaborated with both established companies and startups and has excelled in fast-paced startup environments, where his strong problem-solving skills have been put to good use. He is always exploring new technologies and utilizing his technical expertise to create impactful software solutions.
             `}
@@ -25,8 +26,11 @@ export default function Home() {
           </div>
         </div>
         <WorkHistory />
-        <SectionContainer label='Side Projects'>
+        <SectionContainer label='Side projects'>
           <SideProject />
+        </SectionContainer>
+        <SectionContainer label='Find me'>
+          <Contacts />
         </SectionContainer>
       </div>
     </main>
