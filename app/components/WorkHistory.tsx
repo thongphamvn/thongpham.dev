@@ -52,7 +52,7 @@ export default function WorkHistory() {
   return (
     <div className='flex flex-col items-center mt-4'>
       <button className='' onClick={onToggle}>
-        <div className='py-1.5 px-4 rounded-lg bg-cyan-600 flex items-center text-gray-200'>
+        <div className='py-1.5 px-4 rounded-lg bg-cyan-600 flex items-center text-gray-300'>
           <span>My Work History</span>
           <div className='ml-2'>
             {isOpen ? <RxChevronDown /> : <RxChevronRight />}
@@ -68,7 +68,7 @@ export default function WorkHistory() {
                 {work.time}
               </time>
               <div className='flex items-center'>
-                <h3 className='text-lg font-semibold text-gray-700 dark:text-gray-200 mr-2'>
+                <h3 className='text-lg font-semibold text-gray-700 dark:text-gray-300 mr-2'>
                   {work.role} at
                 </h3>
                 {work.company}

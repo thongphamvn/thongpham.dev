@@ -18,8 +18,12 @@ export default function Home() {
               height={100}
             />
             <p className='text-justify indent-4'>
-              <span className='font-semibold'>Thong Pham</span>
-              {` is a highly skilled full-stack web developer based in Vietnam, with expertise in various technologies. With over 7 years of experience in the industry, Thong has collaborated with both established companies and startups and has excelled in fast-paced startup environments, where his strong problem-solving skills have been put to good use. He is always exploring new technologies and utilizing his technical expertise to create impactful software solutions.
+              {`
+              Hi, I'm Thong Pham, a full-stack web developer based in Vietnam with 7+ years of experience. I specialize in delivering high-quality work that meets my clients' needs, and I've collaborated with a diverse range of clients, from established companies to startups.
+            `}
+            </p>
+            <p className='text-justify indent-4'>
+              {`My expertise in Node.js and React.js, among other technologies, allows me to create impactful software solutions. I'm always exploring new technologies to stay ahead of the curve and utilize my technical expertise to deliver the best results for my clients.
             `}
             </p>
           </div>

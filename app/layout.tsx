@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang='en'>
       <body
         className={
-          'dark:text-gray-200 text-gray-700 bg-light dark:bg-dark w-full ' +
+          'dark:text-gray-300 text-gray-700 bg-light dark:bg-dark w-full ' +
           font.className
         }
       >
