@@ -10,9 +10,9 @@ export default function Home() {
         <div>
           <div className='flex mt-8 items-start flex-col gap-2 sm:block'>
             <Image
-              className='flex-shrink-0 self-center sm:ml-4 sm:float-right '
-              src={'/thong.png'}
-              alt='thong'
+              className='flex-shrink-0 self-center sm:ml-4 sm:float-right rounded-full'
+              src={'/thongpham.png'}
+              alt='thongpham'
               width={150}
               style={{ height: 'auto' }}
               height={100}
