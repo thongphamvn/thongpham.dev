@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Contacts from './components/Contacts'
+import Projects from './components/Projects'
 import SectionContainer from './components/SectionContainer'
 import WorkHistory from './components/WorkHistory'
 
@@ -29,9 +30,9 @@ export default function Home() {
           </div>
         </div>
         <WorkHistory />
-        {/* <SectionContainer label='Side projects'>
-          <SideProject />
-        </SectionContainer> */}
+        <SectionContainer label='Portfolio (In-progress)'>
+          <Projects />
+        </SectionContainer>
         <SectionContainer label='Find me'>
           <Contacts />
         </SectionContainer>
