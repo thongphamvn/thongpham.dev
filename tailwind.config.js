@@ -9,8 +9,8 @@ module.exports = {
     extend: {
       colors: {
         light: '#f0e7db',
-        lightOpacity: '#f0e7db80',
-        darkOpacity: '#20202380',
+        lightOpacity: '#f0e7db99',
+        darkOpacity: '#20202399',
         dark: '#202023',
       },
       backgroundImage: {

@@ -35,13 +35,12 @@ function ProjectCard({ project }: { project: ProjectType }) {
           height={150}
           sizes='100vw'
           style={{
-            width: 'auto',
-            height: '100%',
+            width: '100%',
+            height: 'auto',
           }}
         />
       </div>
-
-      <p className='p-2 font-bold'>{project.name}</p>
+      <p className='p-2 font-semibold'>{project.name}</p>
     </div>
   )
 }
