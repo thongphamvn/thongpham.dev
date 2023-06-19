@@ -6,8 +6,6 @@ export default function Page() {
 
   return (
     <div>
-      <h1>My blog</h1>
-
       <h2>All posts:</h2>
       <ul>
         {posts.map((post) => {

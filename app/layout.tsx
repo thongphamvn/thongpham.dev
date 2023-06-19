@@ -1,5 +1,4 @@
 import { Nunito_Sans } from 'next/font/google'
-import NavBar from './components/NavBar'
 import './globals.css'
 import { Providers } from './providers'
 
@@ -22,10 +21,7 @@ export default function RootLayout({
           font.className
         }
       >
-        <Providers>
-          <NavBar />
-          <main className='pt-12 max-w-xl m-auto'>{children}</main>
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   )
