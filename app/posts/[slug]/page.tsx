@@ -1,8 +1,8 @@
 import { getAllPosts, getPostBySlug } from '@/lib'
 import Head from 'next/head'
+import Layout from '../components/clayout'
 import Container from '../components/container'
 import Header from '../components/header'
-import Layout from '../components/layout'
 import PostBody from '../components/post-body'
 import PostHeader from '../components/post-header'
 
