@@ -1,38 +1,19 @@
 import { getAllPosts, getPostBySlug } from '@/lib'
-import Head from 'next/head'
 import PostBody from '../components/post-body'
 import PostHeader from '../components/post-header'
+import './atom-one-dark.css'
 
 export default async function Post({ params: { slug } }: any) {
-  const post = getPostBySlug(slug)
-
-  console.log(post)
+  const post = await getPostBySlug(slug)
 
   return (
     <article className='mb-32'>
-      <Head>
-        <title>{post.title}</title>
-        <meta property='og:image' content={'post.ogImage.url'} />
-      </Head>
-      <PostHeader
-        title={post.title}
-        coverImage={post.coverImage}
-        date={post.date}
-        author={post.author}
-      />
+      <PostHeader title={post.title} date={post.date} />
       <PostBody content={post.content} />
     </article>
   )
 }
 
-type Params = {
-  params: {
-    slug: string
-  }
-}
-
-// This function can statically allow nextjs to find all the posts that you
-// have made, and statically generate them
 export async function generateStaticParams() {
   const posts = await getAllPosts()
 

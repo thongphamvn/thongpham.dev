@@ -1,20 +1,17 @@
 import { getAllPosts } from '@/lib/api'
 import Link from 'next/link'
 
-export default function Page() {
-  const posts = getAllPosts()
+export default async function Page() {
+  const posts = await getAllPosts()
 
   return (
     <div>
-      <h2>All posts:</h2>
       <ul>
         {posts.map((post) => {
-          const { slug, date, title } = post
+          const { slug, title } = post
           return (
             <li key={slug}>
-              <Link href={`/posts/${slug}`}>
-                {date} - {title}
-              </Link>
+              <Link href={`/posts/${slug}`}>{title}</Link>
             </li>
           )
         })}
