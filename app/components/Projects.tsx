@@ -17,11 +17,6 @@ const projects: ProjectType[] = [
     slug: 'url-shortener',
     image: '/url-shorten.jpeg',
   },
-  {
-    name: '3rd project',
-    slug: '3rd-project',
-    image: '/restaurant.png',
-  },
 ]
 
 function ProjectCard({ project }: { project: ProjectType }) {
