@@ -14,6 +14,7 @@ export default async function Post({ params: { slug } }: any) {
   )
 }
 
+export const dynamicParams = false
 export async function generateStaticParams() {
   const posts = await getAllPosts()
 

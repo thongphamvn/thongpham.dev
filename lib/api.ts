@@ -11,20 +11,27 @@ export function getPostSlugs() {
 }
 
 export async function getPostBySlug(slug: string): Promise<PostType> {
-  const realSlug = slug.replace(/\.md$/, '')
-  const fullPath = join(postsDirectory, `${realSlug}.md`)
+  const slugs = getPostSlugs()
+
+  const realSlug = slugs.find((slg) => slg.includes(slug))
+  if (!realSlug) {
+    throw new Error('Path not found')
+  }
+
+  const fullPath = join(postsDirectory, realSlug)
+
   const fileContents = fs.readFileSync(fullPath, 'utf8')
   const { data, content } = matter(fileContents)
 
   const convertedContent = await markdownToHtml(content || '')
-
-  return { ...data, slug: realSlug, content: convertedContent } as PostType
+  return { ...data, slug, content: convertedContent } as PostType
 }
 
-export function getAllPosts() {
+export async function getAllPosts() {
   const slugs = getPostSlugs()
-  const posts = Promise.all(slugs.map((slug) => getPostBySlug(slug))).then(
-    (res) => res.sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
-  )
+    .sort((a, b) => (a < b ? 1 : -1))
+    .map((slg) => slg.replace(/^\d+-(.*?)\.[^.]*$/, '$1'))
+
+  const posts = await Promise.all(slugs.map((slug) => getPostBySlug(slug)))
   return posts
 }

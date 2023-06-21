@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Contacts from './components/Contacts'
-import NavBar from './components/NavBar'
 import Projects from './components/Projects'
 import SectionContainer from './components/SectionContainer'
 import WorkHistory from './components/WorkHistory'
@@ -8,8 +7,8 @@ import WorkHistory from './components/WorkHistory'
 export default function Home() {
   return (
     <div>
-      <NavBar />
-      <main className='pt-12 max-w-xl m-auto flex h-full flex-col items-center justify-center p-4'>
+      {/* <NavBar /> */}
+      <main className='pt-8 max-w-xl m-auto flex h-full flex-col items-center justify-center p-4'>
         <div className='mb-8'>
           <div>
             <div className='flex mt-8 items-start flex-col gap-2 sm:block'>
@@ -33,7 +32,7 @@ export default function Home() {
             </div>
           </div>
           <WorkHistory />
-          <SectionContainer label='Portfolio (In-progress)'>
+          <SectionContainer label='Portfolio'>
             <Projects />
           </SectionContainer>
           <SectionContainer label='Find me'>
