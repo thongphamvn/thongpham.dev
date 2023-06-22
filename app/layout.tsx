@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react'
 import { Nunito_Sans } from 'next/font/google'
 import './globals.css'
 import { Providers } from './providers'
@@ -21,7 +22,10 @@ export default function RootLayout({
           font.className
         }
       >
-        <Providers>{children}</Providers>
+        <Providers>
+          {children}
+          <Analytics />
+        </Providers>
       </body>
     </html>
   )
