@@ -52,7 +52,7 @@ export default function WorkHistory() {
   return (
     <div className='flex flex-col items-center mt-4'>
       <button className='' onClick={onToggle}>
-        <div className='py-1.5 px-4 rounded-lg bg-cyan-600 flex items-center text-gray-200'>
+        <div className='flex items-center text-cyan-800 font-semibold'>
           <span>My Work History</span>
           <div className='ml-2'>
             {isOpen ? <RxChevronDown /> : <RxChevronRight />}
