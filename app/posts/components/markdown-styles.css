@@ -268,8 +268,8 @@
 .markdown-body h4,
 .markdown-body h5,
 .markdown-body h6 {
-  margin-top: 24px;
-  margin-bottom: 16px;
+  margin-top: 32px;
+  margin-bottom: 12px;
   font-weight: 600;
   line-height: 1.25;
 }
@@ -318,7 +318,6 @@
 .markdown-body ol {
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 2em;
 }
 
 .markdown-body ol ol,

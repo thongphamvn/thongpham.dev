@@ -8,8 +8,13 @@ type ProjectType = {
 
 const projects: ProjectType[] = [
   {
-    name: 'URL shortener',
-    slug: 'posts/url-shortener',
+    name: 'Messaging Application',
+    slug: 'posts/messaging-app',
+    description: 'A messaging app, using ExpressJs, socket.io, ReactJs',
+  },
+  {
+    name: 'An URL shortener',
+    slug: 'posts/url-shortener-app',
     description:
       'Shorten any URL with click statistics using NestJS, ReactJS, MongoDB, and Auth0',
   },
