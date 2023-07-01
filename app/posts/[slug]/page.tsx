@@ -7,7 +7,7 @@ export default async function Post({ params: { slug } }: any) {
   const post = await getPostBySlug(slug)
 
   return (
-    <article className='mb-32'>
+    <article className='mb-12 px-2'>
       <PostHeader title={post.title} date={post.date} />
       <PostBody content={post.content} />
     </article>
