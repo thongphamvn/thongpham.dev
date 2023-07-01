@@ -1,41 +1,25 @@
-import Image from 'next/image'
+import Link from 'next/link'
 
 type ProjectType = {
   name: string
-  image: string
+  description: string
   slug: string
 }
 
 const projects: ProjectType[] = [
   {
-    name: 'Restaurant Booking',
-    slug: 'restaurant-booking',
-    image: '/restaurant.png',
-  },
-  {
     name: 'URL shortener',
-    slug: 'url-shortener',
-    image: '/url-shorten.jpeg',
+    slug: 'posts/url-shortener',
+    description:
+      'Shorten any URL with click statistics using NestJS, ReactJS, MongoDB, and Auth0',
   },
 ]
 
 function ProjectCard({ project }: { project: ProjectType }) {
   return (
-    <div className='col-span-1 shadow-md rounded-md flex flex-col justify-center items-center overflow-hidden'>
-      <div>
-        <Image
-          src={project.image}
-          alt={project.name}
-          width={200}
-          height={150}
-          sizes='100vw'
-          style={{
-            width: '100%',
-            height: 'auto',
-          }}
-        />
-      </div>
-      <p className='p-2 font-semibold'>{project.name}</p>
+    <div className='col-span-1 py-4 px-2 rounded-xl overflow-hidden border border-gray-400 hover:border-gray-500'>
+      <h3 className='font-bold text-lg'>{project.name}</h3>
+      <p className='text-md italic'>{project.description}</p>
     </div>
   )
 }
@@ -44,7 +28,9 @@ export default function Projects() {
   return (
     <div className='w-full grid grid-cols-2 gap-2 md:gap-4 mt-2'>
       {projects.map((project) => (
-        <ProjectCard project={project} key={project.slug} />
+        <Link key={project.slug} href={project.slug}>
+          <ProjectCard project={project} key={project.slug} />
+        </Link>
       ))}
     </div>
   )
